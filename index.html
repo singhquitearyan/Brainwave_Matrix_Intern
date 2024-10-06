@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangam Fitness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
+<style>
+    /* height-960px */
+    /* width- 1497px */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(img1resize.jpg);
+        color: white;
+        background-repeat: no-repeat;
+
+    }
+
+    .left {
+        /* border: solid wheat; */
+        display: inline-block;
+        left: 60px;
+        top: 20px;
+        position: absolute;
+    }
+
+    .left img {
+        width: 200px;
+    }
+    .navbar {
+        display: block;
+        width: 55%;
+        margin: 100px 336px 0px 336px;
+        padding: 3px 4px;
+        color: #ffa700;
+        background-color: rgba(0, 0, 0, 0.426);
+        border: 2px solid #ffa700;
+        border-radius: 10px;
+        height: 40px;
+        text-align: center;
+        /* position: fixed; */
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+        margin: 2px 4px;
+        font-size: x-large;
+        font-weight: 900;
+        /* position: fixed; */
+
+    }
+
+    .navbar li a {
+        color: gold;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: white;
+        font-size: large;
+        font-weight: 800;
+
+    }
+    .right{
+       display:inline-block;
+       position:absolute;      
+       left: 1360px;
+       top: 25px;
+       
+
+    }
+    .right button{
+        width: 90px;
+        height: 30px;
+        cursor: pointer;
+        background-color: #c69c6d;
+        border: 1px solid black;
+        padding: 1px 2px;
+    font-size: medium;
+    font-family: ui-rounded;
+        
+        
+    }
+.right :hover{
+    /* color: beige; */
+    background-color: gold;
+}
+
+    .content1 {
+        text-align: center;
+        margin: 130px 216px 0px 216px;
+        color: #ffa700;
+        background-color: rgba(0, 0, 0, 0.36);
+        display: block;
+        width: 70%;
+        padding: auto auto;
+    }
+
+    .content1 p {
+        color: white;
+        font-size: large;
+        font-weight: 500;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 40px;
+        padding: 20px 50px;
+
+    }
+
+    .content2 {
+        margin: 60px 390px 0px 600px;
+        width: 70%;
+        display: block;
+
+    }
+
+    #why {
+        font-size: 40px;
+        font-weight: 900;
+        padding: 0px auto;
+        margin: auto auto;
+        color: rgb(255, 215, 0);
+    }
+
+    #why2 {
+        font-weight: bold;
+        margin: auto auto;
+        padding: 0px auto;
+        font-size: 18px;
+    }
+
+    .whylist {
+        line-height: 40px;
+        color: rgb(249, 249, 248);
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .content3 {
+        margin: 30px 0px 20px 15px;
+        color: black;
+        width: 50%;
+        padding: 4px 4px;
+        background-color: rgba(255, 217, 0, 0.293);
+        border-radius: 20px;
+        display: inline-block;
+        /* border: solid black; */
+        /* background-color: ; */
+    }
+
+    .content3 h2 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0px 0px;
+    }
+
+    .content3 p {
+        line-height: 30px;
+        margin: 0px 4px;
+
+    }
+
+    .content3 img {
+        /* position: absolute; */
+        /* left: 898px ; */
+        width: 450px;
+        position: relative;
+        top: 0px;
+        left: 280px;
+    }
+
+    .content4 {
+        margin: 30px 0px 20px 15px;
+        color: black;
+        width: 50%;
+        padding: 4px 4px;
+        background-color: rgba(255, 217, 0, 0.353);
+        border-radius: 20px;
+        display: inline-block;
+        /* border: solid black; */
+        position: relative;
+        left: 700px;
+        top: 20px;
+
+    }
+
+    .content4 h2 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0px 0px;
+        /* display: block; */
+    }
+
+    .content4 p {
+        line-height: 30px;
+        margin: 0px 4px;
+
+    }
+
+    .content4 img {
+        /* position: absolute; */
+        /* left: 898px ; */
+        width: 450px;
+        position: relative;
+        top: 0px;
+        left: 280px;
+    }
+
+    .content5 {
+        margin: 30px 0px 20px 15px;
+        color: black;
+        width: 50%;
+        padding: 4px 4px;
+        background-color: rgba(255, 217, 0, 0.353);
+        border-radius: 20px;
+        display: inline-block;
+        /* border: solid black; */
+
+    }
+
+    .content5 h2 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0px 0px;
+    }
+
+    .content5 p {
+        line-height: 30px;
+        margin: 0px 4px;
+
+    }
+
+    .content5 img {
+        /* position: absolute; */
+        /* left: 898px ; */
+        width: 450px;
+        position: relative;
+        top: 0px;
+        left: 280px;
+    }
+
+    .content6 {
+        margin: 30px 0px 20px 15px;
+        color: black;
+        width: 50%;
+        padding: 4px 4px;
+        background-color: rgba(255, 217, 0, 0.353);
+        border-radius: 20px;
+        display: inline-block;
+        /* border: solid black; */
+        position: relative;
+        left: 700px;
+        top: 20px;
+
+    }
+
+    .content6 h2 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0px 0px;
+        /* display: block; */
+    }
+
+    .content6 p {
+        line-height: 30px;
+        margin: 0px 4px;
+
+    }
+
+    .content6 img {
+        /* position: absolute; */
+        /* left: 898px ; */
+        width: 450px;
+        position: relative;
+        top: 0px;
+        left: 280px;
+    }
+    .fitnesscalculator{
+        display: block ;
+        width: 20%;
+        margin: 20px 390px 0px 600px;
+
+      
+
+    }
+    .fitnesscalculator {
+        font-size: larger;
+        font-weight: 500;
+        font-family: fantasy;
+        cursor: pointer;
+        height: 30px;
+        padding: 1px 3px;
+    }
+    .fitnesscalculator a{
+        text-align: center;
+        color: black;
+    }
+    .fitnesscalculator a:hover{
+        color: #f68300;
+
+    }
+    .register{
+        display:inline-block  ;
+        width: 9%;
+        margin: 0px 390px 100px 600px;
+        /* border: 2px solid goldenrod; */
+        border-radius: 7px;
+    }
+    .register{
+        font-size: larger;
+        font-weight: 500;
+        font-family: fantasy;
+        cursor: pointer;
+        height: 30px;
+        /* padding: 1px 3px; */
+    }
+    .register a{
+        color: goldenrod;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .register a:hover{
+        color: white;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left for logo -->
+        <div class="left">
+            <img src="gymlogo.png" alt="">
+
+
+        </div>
+
+        <!-- centre for navbar -->
+        
+        <div class="centre">
+             <!-- Mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="premium.html">Membership</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="https://www.pexels.com/search/gym%20and%20fitness/">Images</a></li>
+                <li><a href="https://chat.openai.com/">Chat Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button>Call Us</button>
+        </div>
+    </header>
+    <div class="content1">
+        <h1>Welcome to the Premium Gym of Varanasi</h1>
+        <p>SANGAM Gyms has the best personal training program in the Varanasi region. Our certified personal
+            trainers are experts in their craft. We create the perfect programs to help you reach your goals.
+            Everything begins with our energy and figuring out how to evolve that, then the journey begins.
+
+            Sangam Gym was inagurated on 12 Sept. 2023. It is expanded in a total 1 acres of land at the
+            prime Place of Varanasi. Gym is equipped with all modern equipments used in body training.
+        </p>
+
+    </div>
+    <div class="content2">
+        <h2 id="why"> WHY SANGAM GYM ?</h2>
+        <P id="why2">Luxury Gym Experience Everyone Can Afford.</P>
+        <ul type="square" class="whyul">
+            <li class="whylist">Super Clean</li>
+            <li class="whylist">Friendly Staff</li>
+            <li class="whylist">Workout & Recover</li>
+        </ul>
+    </div>
+    <div class="content3">
+        <h2>The Experience</h2>
+        <p>Cleanliness & Friendliness, Guaranteed. Fitness nGo carries the latest and greatest cardio and strength
+            training equipment available, exciting nGo classes, Personal Training, Cryo-Therapy, Hydromassage,
+            Kids Club, and the greatest atmosphere in the city.</p>
+        <img src="yogaphoto.jpg" alt="yogaphoto">
+    </div>
+    <div class="content4">
+        <h2>THE. BEST.
+        </h2>
+        <h2>RECOVERY.</h2>
+        <P>Our ultimate tier membership gives you the best recovery equipment in Port Saint Lucie. The hydromassage and
+            Cryo chairs alone are worth the becoming a member. </P>
+        <img src="recoveryequipment.jpg" alt="recoveryequipment">
+    </div>
+    <div class="content5">
+        <h2>TURF ZONE</h2>
+        <p>
+            The perfect place to knock out those athletic workouts, take content, or use the TANK.
+        </p>
+        <img src="turfzone.jpg" alt="">
+    </div>
+    <div class="content6">
+        <h2>ATMOSPHERE</h2>
+        <p>Our members tell us that they love our gym and the competitive
+
+            atmosphere to be better. We are a gym for people that are serious
+
+            about their health and fitness. Our gym is almost at capacity for monthly members because we want to
+            make sure we don't get overcrowded</p>
+        <img src="goodenv.jpg" alt="">
+    </div>
+<div class="fitnesscalculator">
+    <a href="https://www.calculator.net/bmi-calculator.html">Fitness Calculator</a>
+    
+</div>
+<div class="register">
+    <a href="formmaking.html">Register Here</a>
+</div>
+</body>
+
+</html>
